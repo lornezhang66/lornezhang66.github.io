@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="maven,工具类,nexus," />
 
 
 
@@ -94,16 +94,18 @@
 
 
 
-<meta name="description" content="重为轻根，静为躁君">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lorne&#39;s Bolg">
-<meta property="og:url" content="http://blog.fw68.cn/tags/解决方案/index.html">
+<meta name="description" content="@[maven, Nexus] 私服不是Maven的核心概念，它仅仅是一种衍生出来的特殊的Maven仓库。  如果没有私服，我们所需的所有构件都需要通过maven的中央仓库和第三方的Maven仓库下载到本地，而一个团队中的所有人都重复的从maven仓库下载构件无疑加大了仓库的负载和浪费了外网带宽，如果网速慢的话，还会影响项目的进程。很多情况下项目的开发都是在内网进行的，连接不到maven仓库怎么办">
+<meta name="keywords" content="maven,工具类,nexus">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Maven Nexus安装使用">
+<meta property="og:url" content="http://blog.fw68.cn/2018/02/10/Maven-Nexus安装使用/index.html">
 <meta property="og:site_name" content="Lorne&#39;s Bolg">
-<meta property="og:description" content="重为轻根，静为躁君">
+<meta property="og:description" content="@[maven, Nexus] 私服不是Maven的核心概念，它仅仅是一种衍生出来的特殊的Maven仓库。  如果没有私服，我们所需的所有构件都需要通过maven的中央仓库和第三方的Maven仓库下载到本地，而一个团队中的所有人都重复的从maven仓库下载构件无疑加大了仓库的负载和浪费了外网带宽，如果网速慢的话，还会影响项目的进程。很多情况下项目的开发都是在内网进行的，连接不到maven仓库怎么办">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-10T15:23:10.708Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lorne&#39;s Bolg">
-<meta name="twitter:description" content="重为轻根，静为躁君">
+<meta name="twitter:title" content="Maven Nexus安装使用">
+<meta name="twitter:description" content="@[maven, Nexus] 私服不是Maven的核心概念，它仅仅是一种衍生出来的特殊的Maven仓库。  如果没有私服，我们所需的所有构件都需要通过maven的中央仓库和第三方的Maven仓库下载到本地，而一个团队中的所有人都重复的从maven仓库下载构件无疑加大了仓库的负载和浪费了外网带宽，如果网速慢的话，还会影响项目的进程。很多情况下项目的开发都是在内网进行的，连接不到maven仓库怎么办">
 
 
 
@@ -132,13 +134,13 @@
 
 
 
-  <link rel="canonical" href="http://blog.fw68.cn/tags/解决方案/"/>
+  <link rel="canonical" href="http://blog.fw68.cn/2018/02/10/Maven-Nexus安装使用/"/>
 
 
 
 
 
-  <title>标签: 解决方案 | Lorne's Bolg</title>
+  <title>Maven Nexus安装使用 | Lorne's Bolg</title>
   
 
 
@@ -173,7 +175,7 @@
     
   
 
-  <div class="container sidebar-position-left  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -267,54 +269,216 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>解决方案<small>标签</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.fw68.cn/2018/02/10/Maven-Nexus安装使用/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lorne zhang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lorne's Bolg">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/02/10/图片压缩方案/" itemprop="url">
-              
-                <span itemprop="name">图片压缩方案</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">Maven Nexus安装使用</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-02-10T22:32:24+08:00"
-              content="2018-02-10" >
-          02-10
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-10T23:22:20+08:00">
+                2018-02-10
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/02/10/Maven-Nexus安装使用/" class="leancloud_visitors" data-flag-title="Maven Nexus安装使用">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>@[maven, Nexus]</p>
+<p>私服不是Maven的核心概念，它仅仅是一种衍生出来的特殊的Maven仓库。</p>
+<p> 如果没有私服，我们所需的所有构件都需要通过maven的中央仓库和第三方的Maven仓库下载到本地，而一个团队中的所有人都重复的从maven仓库下载构件无疑加大了仓库的负载和浪费了外网带宽，如果网速慢的话，还会影响项目的进程。很多情况下项目的开发都是在内网进行的，连接不到maven仓库怎么办呢？开发的公共构件怎么让其它项目使用？这个时候我们不得不为自己的团队搭建属于自己的maven私服，这样既节省了网络带宽也会加速项目搭建的进程，当然前提条件就是你的私服中拥有项目所需的所有构件。</p>
+<ol>
+<li>安装Nexus</li>
+</ol>
+<p>Nexus是典型的JavaWeb应用，它有两种安装包，一种是包含Jetty容器的Bundle包，另一种是不包含Web容器的war包。</p>
+<p>1）下载Nexus</p>
+<p>官网<a href="http://www.sonatype.org/nexus/" target="_blank" rel="noopener">http://www.sonatype.org/nexus/</a> 下载最新的Nexus。</p>
+<p>2）Bundle方式安装Nexus</p>
+<p>a.首先看下解压后的目录，结构：</p>
+<p>解压后存在两个文件夹：nexus-2.4.0-01（不同版本版本号不同）和sonatype-work。</p>
+<p>nexus-2.4.0-01: 该目录包含了Nexus运行所需要的文件，如启动脚本、依赖jar包等。</p>
+<p>sonatype-work：该目录包含Nenus生成的配置文件、日志文件、仓库文件等。</p>
+<p>第一个目录是运行Nexus必须的，而第二个不是必须的，Nexus会在运行的时候动态创建该目录。</p>
+<p>b.配置Path，启动Nexus（在windows操作系统上）</p>
+<p>首先在环境变量path下加入如下地址：C:\nexus\nexus-2.6.2-01-bundle\nexus-2.6.2-01\bin；之后在cmd下启动Nexus服务：</p>
+<p>启动成功后，可以打开打开浏览器访问：<a href="http://localhost:8081/nexus" target="_blank" rel="noopener">http://localhost:8081/nexus</a> 就可以看到Nexus的界面了，如下图：</p>
+<p>8081为默认的端口号，要修改端口号可进入nexus-2.1.2-bundle\nexus-2.1.2\conf\打开nexus.properties文件，修改application-port属性值就可以了</p>
+<p>这时你可以单击界面右上角的Login进行登录，Nexus默认管理用户名和密码为admin/admin123。</p>
+<p>b.1在Linux上切换到/opt/nexus/nexus-2.14.0-01/bin目录下</p>
+<p>存在nexus及nexus.bat文件，可以使用./nexus start 启动nexus，这时候可能会报错。</p>
+<p>这时候提示：</p>
+<hr>
+<p>WARNING – NOTRECOMMENDED TO RUN AS ROOT</p>
+<hr>
+<p>If you insist running as root, then set theenvironment variable RUN_AS_USER=root before running this script.<br>大概意思就是要在环境配置export RUN_AS_USER=root，临时配置<br>在命令行下输入：<br>export RUN_AS_USER=root<br>然后执行，就不会再提示了<br>./nexus start</p>
+<p>也可以在系统里面永久配置<br>vi /etc/profile  加入export RUN_AS_USER=root</p>
+<ol>
+<li>Nexus的索引</li>
+</ol>
+<p>这时你使用Nexus搜索插件得不到任何结果，为了能够搜索Maven中央库，首先需要设置Nexus中的MavenCentral仓库下载远程索引。如下图：</p>
+<p>单击左边导航栏的Repositories，可以link到这个页面，选择Central，点击Configuration，里面有一个DownloadRemote Indexes配置，默认状态是false，将其改为true，‘Save’后，单击Administration==&gt; ScheduledTasks,就有一条更新Index的任务，这个是Nexus在后天运行了一个任务来下载中央仓库的索引。由于中央仓库的内容比较多，因此其索引文件比较大，Nexus下载该文件也需要比较长的时间。请读者耐心等待把。如果网速不好的话，可以使用其他人搭建好的的Nexus私服。后面会介绍。下图为Nexus后台运行的task图：</p>
+<p>3.配置Maven从Nexus下载构件</p>
+<p>1）在POM中配置Nexus私服，这样的配置只对当前的Maven项目有效。</p>
+<p><repositories><br>      <repository><br>          <id>nexus</id><br>          <name>Nexus Repository</name><br>          <url><a href="http://localhost:8081/nexus/content/groups/public/" target="_blank" rel="noopener">http://localhost:8081/nexus/content/groups/public/</a></url><br>          <releases><br>              <enabled>true</enabled><br>          </releases><br>          <snapshots><br>              <enabled>true</enabled><br>          </snapshots><br>      </repository><br>  </repositories><br>2）在settings.xml中配置profile元素，这样就能让本机所有的Maven项目都使用自己的Maven私服。 </p>
+<p><mirrors><br>    <mirror><br>      <id>central</id><br>      <mirrorof>*</mirrorof><br>      <name>Human Readable Name for this Mirror.</name><br>      <url><a href="http://localhost:8081/nexus/content/groups/public/" target="_blank" rel="noopener">http://localhost:8081/nexus/content/groups/public/</a></url><br>    </mirror><br>  </mirrors><br>  <profiles><br>    <profile><br>      <id>nexus</id><br>      <repositories><br>        <repository><br>          <id>nexus</id><br>          <name>Nexus</name><br>          <url><a href="http://localhost:8081/nexus/content/groups/public/" target="_blank" rel="noopener">http://localhost:8081/nexus/content/groups/public/</a></url><br>            <releases><br>                        <enabled>true</enabled><br>                  </releases><br>          <snapshots><br>                        <enabled>true</enabled><br>                  </snapshots><br>        </repository><br>      </repositories><br>    </profile><br></profiles><br>以上配置所有Maven下载请求都仅仅通过Nexus，以全面发挥私服的作用。</p>
+<ol>
+<li>部署构件到Nexus</li>
+</ol>
+<p>1）在POM中配置</p>
+<p><project><br>  …<br>  <distributionmanagement></distributionmanagement></project></p>
+<snapshotrepository><br>        <id>user-snapshots</id><br>        <name>User Project SNAPSHOTS</name><br>        <url><a href="http://localhost:8081/nexus/content/repositories/MyUserReposSnapshots/" target="_blank" rel="noopener">http://localhost:8081/nexus/content/repositories/MyUserReposSnapshots/</a></url><br>    </snapshotrepository>
+
+<pre><code>&lt;repository&gt;
+    &lt;id&gt;user-releases&lt;/id&gt;
+    &lt;name&gt;User Project Release&lt;/name&gt;
+    &lt;url&gt;http://localhost:8081/nexus/content/repositories/MyUserReposRelease/&lt;/url&gt;
+&lt;/repository&gt;
+</code></pre><p>  <br>   …<br><br>2）settings.xml中配置认证信息，Nexus的仓库对于匿名用户是只读的。 </p>
+<servers><br><br>    <server><br>      <id>user-snapshots</id><br>      <username>lb</username><br>      <password>123456</password><br>    </server><br><br>    <server><br>      <id>user-releases</id><br>      <username>lb</username><br>      <password>123456</password><br>    </server><br><br>  </servers>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/maven/" rel="tag"># maven</a>
+          
+            <a href="/tags/工具类/" rel="tag"># 工具类</a>
+          
+            <a href="/tags/nexus/" rel="tag"># nexus</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/10/linux-下安装svn-配置submin/" rel="next" title="linux 下安装svn 配置submin">
+                <i class="fa fa-chevron-left"></i> linux 下安装svn 配置submin
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/02/10/Mave-国内镜像/" rel="prev" title="Mave 国内镜像">
+                Mave 国内镜像 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -322,6 +486,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -555,10 +723,10 @@
   
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
