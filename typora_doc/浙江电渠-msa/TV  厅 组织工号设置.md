@@ -1,0 +1,80 @@
+## TV  厅 组织工号设置
+
+> 2019年4月2日14:30:57
+
+```sql
+/* 恢复以前配置*/
+update broadband.t_bd_atom_opid set menu_id ='1|2|3|5|10|11|54' where inner_no='ESB_SO_PERSONAL_VAS_ORDER_002'  and menu_id ='1|2|3|5|10|11|54|86' ;
+/*删除错误配置 */
+delete from broadband.t_bd_atom_opid where menu_id ='86' and inner_no='ESB_SO_PERSONAL_WB_CHANGE_001';
+
+/** 新增ESB_SO_PERSONAL_VAS_ORDER_002、ESB_SO_PERSONAL_WB_CHANGE_001 接口配置 */
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e019eb0132e7a4174e1030', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '570', '20071383', '11', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e029eb0132e7a4174e1031', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '571', '20071387', '12', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e039eb0132e7a4174e1032', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '572', '20071386', '13', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e049eb0132e7a4174e1033', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '573', '20071384', '14', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e059eb0132e7a4174e1034', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '574', '20071385', '15', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e069eb0132e7a4174e1035', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '575', '20071382', '16', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e079eb0132e7a4174e1036', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '576', '20071392', '17', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e089eb0132e7a4174e1037', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '577', '20071391', '18', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e099eb0132e7a4174e1038', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '578', '20071390', '19', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e109eb0132e7a4174e1039', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '579', '20071389', '20', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('8ac6008e32e119eb0132e7a4174e1040', 'ESB_SO_PERSONAL_VAS_ORDER_002', '86', '580', '20071388', '21', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('0243aabf-43c9-40b4-b881-8bdda413', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '570', '20071383', '11', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('e2416afc-522c-4b16-af8d-b7b1a88', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '571', '20071387', '12', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('3e937581-3075-4c2c-9c63e00d9d5a', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '572', '20071386', '13', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('2cd7d37f-2df5-4fe62-97cf817e818e', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '573', '32530208', '0', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('f70bed85-ceedf-9b26-1cfac4871358', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '574', '20071385', '15', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('fcd637706-4737-98af-a6f2d2910af7', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '575', '20071382', '16', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('5d91-9333-4be9-a317-91b02e7193aa', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '576', '20071392', '17', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('f3d2-9470-49c9-b2d8-817ca1488597', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '577', '20071391', '18', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('4b4e1675--4cd8-be1a-1595d21ac79c', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '578', '20071390', '19', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('3c0c39a19-454f-9996-2ae831753585', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '579', '20071389', '20', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+insert into broadband.t_bd_atom_opid (ID, INNER_NO, MENU_ID, CITY_ID, OP_ID, OP_ORG_ID, STATUS, SYS_OP_ID, SYS_PASSWORD, REMARK, COUNTY_ID)
+values ('5380-8be5-4ccd-a81e-5c565598290d', 'ESB_SO_PERSONAL_WB_CHANGE_001', '86', '580', '20071388', '21', '1', '20295575', '20f2753648b71a35fc1aea17d22e7c4d', '', '');
+
+
+```
+
